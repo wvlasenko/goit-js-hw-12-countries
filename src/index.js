@@ -3,19 +3,19 @@ import countryTpl from './templates/country.hbs';
 import countriesTpl from './templates/countries.hbs';
 const debounce = require('debounce');
 
-function fetchCountry(searchQuery) {
-  const url = `https://restcountries.eu/rest/v2/name/${searchQuery}`;
+// function fetchCountry(searchQuery) {
+//   const url = `https://restcountries.eu/rest/v2/name/${searchQuery}`;
 
-  return fetch(url).then(response => handleErors(response));
-}
+//   return fetch(url).then(response => handleErors(response));
+// }
 
-function handleErors(respons) {
-  if (respons.ok) {
-    return respons.json();
-  } else {
-    baseAlert();
-  }
-}
+// function handleErors(respons) {
+//   if (respons.ok) {
+//     return respons.json();
+//   } else {
+//     baseAlert();
+//   }
+// }
 
 const refs = {
   input: document.querySelector('.country-name'),
