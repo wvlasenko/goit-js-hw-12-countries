@@ -1,4 +1,3 @@
-
 function handleErors(respons) {
   if (respons.ok) {
     return respons.json();
@@ -6,4 +5,4 @@ function handleErors(respons) {
     baseAlert();
   }
 }
-exsport default handleErors;
+export default handleErors;
