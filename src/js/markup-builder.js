@@ -1,5 +1,6 @@
 import countryTpl from '../templates/country.hbs';
 import countriesTpl from '../templates/countries.hbs';
+import { baseInfo } from './notificator.js';
 
 function createMarkup(arrOfCountries) {
   let markup;
